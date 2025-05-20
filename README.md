@@ -195,6 +195,6 @@ Web Developer | Cybersecurity Enthusiast
 
 ## Project Partners
 
-**MD TURAN**
-**Khaliel Harper**
-**Yugesh Thapa**
+-**MD TURAN**
+-**Khaliel Harper**
+-**Yugesh Thapa**
