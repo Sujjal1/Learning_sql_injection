@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class="login-container">
+        <h2>Login</h2>
+        {% if error %}
+            <div class="alert">{{ error }}</div>
+        {% endif %}
+        <form action="/login" method="POST">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required> <!-- pattern="[a-zA-Z0-9]+"--> <!-- can be included inside the input field to validate input using html -->
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <input type="hidden" name="api_key" value="my_secret_api_key_123">
+<!-- make sure to not use API key like this directly in html page as it can be easily stolen using inspect in brpwser, this is done only to understand how API keys are validated by server upon the request of valid client -->
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+{% endblock %}

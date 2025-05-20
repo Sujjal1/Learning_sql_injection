@@ -1,0 +1,23 @@
+<!-- this is created to show how unauthorized request without secret Key are not acceted by sever and trhow error------------------------------------- -->
+<!-- -----------------------for this to work enable API check part in app.py -------------------------------------------->
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class="login-container">
+        <h2>Forged Login</h2>
+        {% if error %}
+            <div class="alert">{{ error }}</div>
+        {% endif %}
+        <form action="/login" method="POST">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+{% endblock %}
