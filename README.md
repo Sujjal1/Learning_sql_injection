@@ -191,4 +191,10 @@ This will bypass login if parameterized query is **not** used.
 
 **Sujjal Chapagain**  
 Sophomore @ University of Southern Mississippi  
-IBM Certified Software Engineer | Web Developer | Cybersecurity Enthusiast
+Web Developer | Cybersecurity Enthusiast
+
+## Project Partners
+
+**MD TURAN**
+**Khaliel Harper**
+**Yugesh Thapa**
